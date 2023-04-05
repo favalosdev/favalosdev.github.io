@@ -2,12 +2,12 @@ name:                blog
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/blog#readme
+homepage:            https://github.com/favalosdev/blog#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2023 Author name here
+author:              Fernando Avalos 
+maintainer:          fernandoadev@protonmail.com 
+copyright:           2023 Fernando Avalos 
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
