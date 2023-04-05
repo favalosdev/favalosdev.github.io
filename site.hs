@@ -11,15 +11,15 @@ config = defaultConfiguration { destinationDirectory = "docs" }
 
 main :: IO ()
 main = hakyllWith config $ do
-  match "images/*" $ do
+  match "docs/images/*" $ do
       route   idRoute
       compile copyFileCompiler
 
-  match "css/*" $ do
+  match "docs/css/*" $ do
       route   idRoute
       compile compressCssCompiler
 
-  match (fromList ["about.rst", "contact.markdown"]) $ do
+  match (fromList ["docs/about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
       compile $ pandocCompiler
           >>= loadAndApplyTemplate "templates/default.html" defaultContext
