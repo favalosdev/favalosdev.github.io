@@ -11,11 +11,11 @@ config = defaultConfiguration { destinationDirectory = "docs" }
 
 main :: IO ()
 main = hakyllWith config $ do
-  match "docs/images/*" $ do
+  match "images/*" $ do
       route   idRoute
       compile copyFileCompiler
 
-  match "docs/css/*" $ do
+  match "css/*" $ do
       route   idRoute
       compile compressCssCompiler
 
