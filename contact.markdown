@@ -2,5 +2,4 @@
 title: Contact
 ---
 
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+Want to collaborate, share crazy ideas or me to become your next hire? Contact me either through [LinkedIn](https://www.linkedin.com/in/fernando-avalos-lopez/) or my [e-mail](mailto:fernandoadev@protonmail.com).
