@@ -7,7 +7,16 @@ import           Hakyll
 --------------------------------------------------------------------------------
 
 config :: Configuration
-config = defaultConfiguration { destinationDirectory = "docs" }
+config = defaultConfiguration {
+    destinationDirectory = "docs",
+    deployCommand = "\
+        \git checkout main && \
+        \stack exec blog clean && \
+        \stack exec blog build && \
+        \git add -A && \
+        \git commit -m \"Publish!\" && \
+        \git push origin main:main"
+}
 
 main :: IO ()
 main = hakyllWith config $ do
